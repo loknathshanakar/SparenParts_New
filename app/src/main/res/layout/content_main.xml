@@ -11,7 +11,10 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:background="@color/colorWhite"
     tools:context="com.sparenparts.sparenparts.Main"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:id="@+id/parentScroll"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -21,8 +24,10 @@
         <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/banner_pager"
             android:layout_below="@+id/include"
-            android:layout_width="500dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_marginBottom="@dimen/five_dp"
             android:layout_centerHorizontal="true"
             android:layout_alignLeft="@+id/include"
             android:layout_alignStart="@+id/include"
@@ -30,59 +35,110 @@
             android:layout_alignEnd="@+id/include">
         </android.support.v4.view.ViewPager>
 
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/banner_pager"
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
-        <android.support.design.widget.TabLayout
-            android:background="@color/colorWhite"
-            app:tabMaxWidth="0dp"
-            app:tabGravity="fill"
-            app:tabMode="fixed"
-            android:id="@+id/product_tab"
-            android:layout_below="@+id/banner_pager"
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="@dimen/space_between_views"
+            android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            android:layout_alignLeft="@+id/banner_pager"
-            android:layout_alignStart="@+id/banner_pager"
-            android:layout_alignRight="@+id/banner_pager"
-            android:layout_alignEnd="@+id/banner_pager"
-            app:tabSelectedTextColor="#ffffff"
-            />
-        <View
-            android:id="@+id/virtLine"
-            android:layout_below="@+id/product_tab"
-            android:layout_width="500dp"
-            android:layout_height="5dp"
-            android:layout_marginTop="-5dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignLeft="@+id/banner_pager"
-            android:layout_alignStart="@+id/banner_pager"
-            android:layout_alignRight="@+id/banner_pager"
-            android:layout_alignEnd="@+id/banner_pager"/>
+            android:gravity="center"
+            android:orientation="horizontal" />
+        </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/viewPagerIndicator"
+    android:layout_alignLeft="@+id/include"
+    android:layout_alignStart="@+id/include"
+    android:layout_alignRight="@+id/include"
+    android:layout_alignEnd="@+id/include"
+    android:id="@+id/support_layout">
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/tabHost"
+            android:layout_marginTop="@dimen/five_dp"
+            >
 
-        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/product_pager"
-            android:layout_below="@+id/banner_pager"
-            android:layout_width="500dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="@dimen/space_between_views"
-            android:layout_centerHorizontal="true"
-            android:layout_alignLeft="@+id/banner_pager"
-            android:layout_alignStart="@+id/banner_pager"
-            android:layout_alignRight="@+id/banner_pager"
-            android:layout_alignEnd="@+id/banner_pager">
-        </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TabWidget>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="-3dp"
+                    android:background="@color/colorRed"/>
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listViewTab1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listViewTab2" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+</LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/support_layout"
+            android:textSize="13sp"
+            android:layout_marginBottom="@dimen/five_dp"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/view_more"
+            android:id="@+id/show_more"
+            android:layout_gravity="right" />
         <ImageView
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:id="@+id/exclusive_image"
-            android:layout_marginTop="@dimen/space_between_views"
-            android:layout_below="@+id/product_pager"
-            android:layout_centerHorizontal="true"
-            android:layout_alignLeft="@+id/banner_pager"
-            android:layout_alignStart="@+id/banner_pager"
-            android:layout_alignRight="@+id/banner_pager"
-            android:layout_alignEnd="@+id/banner_pager"/>
+            android:id="@+id/low_banner"
+            android:layout_below="@+id/show_more"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/side_nav_bar"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignLeft="@+id/include"
+            android:layout_alignStart="@+id/include"
+            android:layout_alignRight="@+id/include"
+            android:layout_alignEnd="@+id/include"/>
     </RelativeLayout>
 </ScrollView>

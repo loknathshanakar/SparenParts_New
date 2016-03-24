@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 
 /**
@@ -34,16 +35,21 @@ public class ImageSlider extends Fragment {
         Bundle bundle = getArguments();
         int tabNumber = bundle.getInt(POSITION);
         ImageView banner=(ImageView)rootView.findViewById(R.id.image_slider);
-        if(tabNumber==0)
-            banner.setImageResource(R.drawable.ic_menu_gallery);
-        if(tabNumber==1)
+        if(tabNumber==0) {
+            banner.setImageResource(R.drawable.side_nav_bar);
+        }
+        if(tabNumber==1) {
             banner.setImageResource(R.drawable.ic_menu_send);
-        if(tabNumber==2)
+        }
+        if(tabNumber==2) {
             banner.setImageResource(R.drawable.ic_action_arrowforward);
-        if(tabNumber==3)
+        }
+        if(tabNumber==3) {
             banner.setImageResource(R.drawable.ic_action_billing);
-        if(tabNumber==4)
+        }
+        if(tabNumber==4) {
             banner.setImageResource(R.drawable.ic_action_cancel);
+        }
         return rootView;
     }
 }
