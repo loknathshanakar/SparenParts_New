@@ -156,7 +156,7 @@
             android:layout_marginRight="@dimen/ten_dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/semi_big_header"
+            android:textSize ="@dimen/semi_big_header"
             android:textColor="@color/colorBlack"
             android:text="@string/bill_address_header"
             android:id="@+id/bill_address_header" />
