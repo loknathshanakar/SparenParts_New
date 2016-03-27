@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vat_tin"
+        android:textColor="@color/colorDarkGray"
+        android:id="@+id/vat_tin_msg"
+        style="@android:style/TextAppearance.Small"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vat_tin"
+        android:lines="1"
+        android:background="@drawable/textview_border_low_bend"
+        android:id="@+id/vat_tin_box"
+        android:layout_alignBottom="@+id/submit_vat"
+        android:layout_alignTop="@+id/submit_vat"
+        android:layout_toLeftOf="@+id/submit_vat"
+        android:layout_toStartOf="@+id/submit_vat" />
+
+    <Button
+        android:layout_marginTop="@dimen/five_dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/submit"
+        android:paddingLeft="@dimen/five_dp"
+        android:paddingRight="@dimen/five_dp"
+        android:layout_marginLeft="@dimen/three_dp"
+        android:layout_marginRight="@dimen/three_dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rounded_button_black"
+        android:id="@+id/submit_vat"
+        android:layout_below="@+id/vat_tin_msg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_marginTop="@dimen/five_dp"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vat_claim"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/condition_vat"
+        android:layout_below="@+id/vat_tin_box"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

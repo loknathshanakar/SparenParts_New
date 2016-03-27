@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sparenparts.sparenparts.ProductView"
+    tools:showIn="@layout/activity_product_view">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include android:id="@+id/reusable_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            layout="@layout/reusable_viewpager"/>
+
+        <include android:id="@+id/reusable_dot_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reusable_viewpager"
+            layout="@layout/reusable_dot_indicator"/>
+
+        <include android:id="@+id/reusable_logo_delivery_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reusable_dot_indicator"
+            android:layout_marginTop="@dimen/three_dp"
+            android:layout_marginBottom="@dimen/three_dp"
+            layout="@layout/reusable_logo_delivery_data"/>
+
+        <include android:id="@+id/saperator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reusable_logo_delivery_data"
+            layout="@layout/saperator"/>
+
+        <include android:id="@+id/reusable_summary_availiablity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saperator"
+            layout="@layout/reusable_summary_availiablity"/>
+
+        <include android:id="@+id/saperator_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reusable_summary_availiablity"
+            layout="@layout/saperator"/>
+
+        <include android:id="@+id/reusable_retail_discount_taxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saperator_1"
+            layout="@layout/reusable_retail_discount_taxes"/>
+
+        <include android:id="@+id/saperator_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reusable_retail_discount_taxes"
+            layout="@layout/saperator"/>
+
+        <include android:id="@+id/reusable_bulk_express"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saperator_2"
+            layout="@layout/reusable_bulk_express"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/fakeView"
+            android:layout_below="@+id/reusable_bulk_express"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/ADD_TO_CARD"
+            android:layout_marginRight="@dimen/one_dp"
+            android:layout_below="@+id/fakeView"
+            android:background="@drawable/semi_rounded_button_left"
+            android:id="@+id/add_to_cardt"
+            android:layout_alignEnd="@+id/fakeView"
+            android:layout_alignRight="@+id/fakeView"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/ADD_TO_QUOTATION"
+            android:layout_below="@+id/fakeView"
+            android:layout_marginLeft="@dimen/one_dp"
+            android:background="@drawable/semi_rounded_button_right"
+            android:id="@+id/add_to_quotation"
+            android:layout_alignStart="@+id/fakeView"
+            android:layout_alignLeft="@+id/fakeView"
+            android:textColor="@color/colorWhite"/>
+
+        <include android:id="@+id/reusable_vat_info"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_to_quotation"
+            layout="@layout/reusable_vat_info"/>
+
+
+    </RelativeLayout>
+</ScrollView>

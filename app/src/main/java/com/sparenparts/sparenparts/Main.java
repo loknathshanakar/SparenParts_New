@@ -1,6 +1,7 @@
 package com.sparenparts.sparenparts;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Path;
@@ -253,7 +254,7 @@ public class Main extends AppCompatActivity
         // Instantiate a ViewPager and a PagerAdapter.
         //getSupportActionBar().setCustomView(getResources().getDrawable(R.drawable.ic_action_menu));
 
-
+        /**BROKEN**/
         mPager = (ViewPager) findViewById(R.id.banner_pager);
         mPagerAdapter = new ImageSliderFrag(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
@@ -280,6 +281,8 @@ public class Main extends AppCompatActivity
         mPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                Intent i=new Intent(Main.this,Registration.class);
+                startActivity(i);
             }
 
             @Override

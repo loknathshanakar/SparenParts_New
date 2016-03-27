@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy \nBuy \nBuy "
+        android:id="@+id/bulk_buy"
+        android:textColor="@color/colorDarkGray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 pieces and 3% discount \n5 pieces and 3% discount \n5 pieces and 3% discount"
+        android:id="@+id/colored_price"
+        android:textColor="@color/colorRed"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bulk_buy"
+        android:layout_toEndOf="@+id/bulk_buy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra discount\nExtra discount\nExtra discount"
+        android:id="@+id/addedtext"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorDarkGray"
+        android:layout_toRightOf="@+id/colored_price"
+        android:layout_toEndOf="@+id/colored_price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="want it tomorrow select express delivery duting check out to recieve ordser in less tahtn 4 hours"
+        android:id="@+id/express_del"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_below="@id/bulk_buy"/>
+</RelativeLayout>

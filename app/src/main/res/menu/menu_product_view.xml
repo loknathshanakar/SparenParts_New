@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="102"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_action_settings_main"
+        app:showAsAction="ifRoom"
+        >
+        <menu>
+            <item android:id="@+id/action_notification"
+                android:title="@string/action_notification"
+                android:icon="@drawable/ic_action_notification"/>
+            <item android:id="@+id/action_settings_sub"
+                android:title="@string/action_settings"
+                android:icon="@drawable/ic_action_setings"/>
+            <item android:id="@+id/track_your_order"
+                android:title="@string/track_order"
+                android:icon="@drawable/ic_action_trackyourorder"/>
+            <item android:id="@+id/action_policies"
+                android:title="@string/policies"
+                android:icon="@drawable/ic_action_policy"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/action_checklist"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_check_list"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_checklist"
+        android:title="@string/action_checklist"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_cart"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_action_cart"
+        android:title="@string/action_cart"
+        app:showAsAction="ifRoom" />
+
+</menu>

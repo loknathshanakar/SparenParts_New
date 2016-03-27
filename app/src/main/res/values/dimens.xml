@@ -11,10 +11,14 @@
 
 
     <dimen name="twenty_four">24dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+    <dimen name="three_dp">3dp</dimen>
     <dimen name="five_dp">5dp</dimen>
     <dimen name="ten_dp">10dp</dimen>
     <dimen name="tab_header_size">15sp</dimen>
     <dimen name="nav_drawer_18sp">18sp</dimen>
+    <dimen name="big_header">30sp</dimen>
+    <dimen name="semi_big_header">20sp</dimen>
     <dimen name="nav_drawer_header">15sp</dimen>
     <dimen name="nav_drawer_icon_dim">45dp</dimen>
     <dimen name="nav_drawer_child_padding">60dp</dimen>
