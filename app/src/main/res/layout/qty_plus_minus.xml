@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/qty"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/eight_dp"
+        android:id="@+id/qty"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/minus"
+        android:background="@drawable/textview_border_no_bend"
+        android:textColor="@color/colorDarkGray"
+        android:padding="@dimen/eight_dp"
+        android:id="@+id/minus"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/qty"
+        android:layout_toRightOf="@+id/qty"
+        android:layout_toEndOf="@+id/qty" />
+
+    <TextView
+        android:inputType="number"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/number"
+        android:background="@drawable/textview_border_no_bend"
+        android:textColor="@color/colorDarkGray"
+        android:padding="@dimen/eight_dp"
+        android:id="@+id/number"
+        android:gravity="center"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginStart="-1dp"
+        android:layout_alignBottom="@+id/minus"
+        android:layout_toRightOf="@+id/minus"
+        android:layout_toEndOf="@+id/minus" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/plus"
+        android:background="@drawable/textview_border_no_bend"
+        android:textColor="@color/colorDarkGray"
+        android:padding="@dimen/eight_dp"
+        android:id="@+id/plus"
+        android:gravity="center"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginStart="-1dp"
+        android:layout_alignBottom="@+id/number"
+        android:layout_toRightOf="@+id/number"
+        android:layout_toEndOf="@+id/number" />
+</RelativeLayout>

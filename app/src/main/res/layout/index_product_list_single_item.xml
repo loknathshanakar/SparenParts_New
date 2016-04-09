@@ -19,7 +19,7 @@
             android:id="@+id/list_image"
             android:layout_width="50dip"
             android:layout_height="50dip"
-            android:src="@drawable/ic_action_user"
+            android:src="@drawable/product_placeholder"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"/>
 

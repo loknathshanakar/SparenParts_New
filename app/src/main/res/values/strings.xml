@@ -31,7 +31,7 @@
 
 
     <string name="REGISTRATION">REGISTRATION</string>
-    <string name="REGISTRATION_DESC">A huge content will go here for registratin wcih may be few lines.........</string>
+    <string name="REGISTRATION_DESC">A huge content will go here for registratin wcih may be few lines......................................................................................................</string>
     <string name="company_name">Name of the Company/Firm*</string>
     <string name="full_name">Full Name*</string>
     <string name="email">Email*</string>
@@ -56,4 +56,37 @@
     <string name="district_s">District</string>
     <string name="statr_s">State*</string>
     <string name="pincode_s">Pin Code*</string>
+    <string name="title_activity_login">Login</string>
+
+
+    <string name="LOGIN">Login</string>
+    <string name="LOGIN_DESC">A huge content will go here for registratin wcih may be few lines.........</string>
+    <string name="Email_id">E-Mail Id</string>
+    <string name="password_nostart">Password</string>
+    <string name="remember">Remember Me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sign_in_with_fb">Sign in with Facebook</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_linked">Sign in with Linkedin</string>
+
+
+    <string name="qty">Qty</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="number">1</string>
+    <string name="title_activity_track_your_order">TrackYourOrder</string>
+
+
+    <string name="TRACK_ORDER">TRACK ORDER</string>
+    <string name="enter_order_id">ENTER YOUR ORDER ID*</string>
+    <string name="enter_email_id">ENTER YOUR EMAIL ID* /MOBILE NO*</string>
+    <string name="used_at_order_time">(used for placing the order)</string>
+    <string name="alert_tracking">Enter valid Order ID and Mobile Number or Email you used at the time of purchase</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+
+
+    <string name="FORGET_PASSWORD_DESC">FORGET PASSWORD?</string>
+    <string name="FORGET_PASSWORD">FORGET PASSWORD?</string>
+    <string name="enter_email">Enter your EMail ID</string>
+    <string name="reset_password">RESET PASSWORD</string>
 </resources>

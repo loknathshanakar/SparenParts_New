@@ -33,6 +33,18 @@
         <activity
             android:name=".Registration"
             android:label="@string/title_activity_registration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TrackYourOrder"
+            android:label="@string/title_activity_track_your_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

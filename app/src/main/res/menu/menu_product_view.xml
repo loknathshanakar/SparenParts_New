@@ -6,7 +6,7 @@
         android:orderInCategory="102"
         android:title="@string/action_settings"
         android:icon="@drawable/ic_action_settings_main"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         >
         <menu>
             <item android:id="@+id/action_notification"
@@ -29,20 +29,20 @@
         android:orderInCategory="100"
         android:icon="@drawable/ic_action_search"
         android:title="@string/action_checklist"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/action_check_list"
         android:orderInCategory="100"
         android:icon="@drawable/ic_action_checklist"
         android:title="@string/action_checklist"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/action_cart"
         android:orderInCategory="101"
         android:icon="@drawable/ic_action_cart"
         android:title="@string/action_cart"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
 </menu>

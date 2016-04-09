@@ -8,14 +8,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Registration extends AppCompatActivity {
+public class ForgotPassword extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        setContentView(R.layout.activity_forgot_password);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         /**Action Bar Modifications**/
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -33,5 +34,4 @@ public class Registration extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 }

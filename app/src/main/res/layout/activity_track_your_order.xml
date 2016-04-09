@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="@color/colorWhite"
-    tools:context="com.sparenparts.sparenparts.Registration">
+    tools:context="com.sparenparts.sparenparts.TrackYourOrder">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -22,5 +22,5 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_registration" />
+    <include layout="@layout/content_track_your_order" />
 </android.support.design.widget.CoordinatorLayout>

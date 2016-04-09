@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/textview_border_no_bend">
+
+    <ImageView
+        android:layout_margin="@dimen/five_dp"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:id="@+id/product_image"
+        android:src="@drawable/product_placeholder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/product_company"
+        android:layout_alignTop="@+id/product_image"
+        android:layout_toRightOf="@+id/product_image"
+        android:layout_toEndOf="@+id/product_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="@string/REGISTRATION_DESC"
+        android:maxLines="2"
+        android:id="@+id/product_summary"
+        android:layout_below="@+id/product_company"
+        android:layout_toRightOf="@+id/product_image"
+        android:layout_toEndOf="@+id/product_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/five_dp"
+        android:text="Medium Text"
+        android:id="@+id/product_cost"
+        android:layout_below="@+id/product_summary"
+        android:layout_toRightOf="@+id/product_image"
+        android:layout_toEndOf="@+id/product_image" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:padding="@dimen/five_dp"
+        android:text="@string/ADD_TO_CARD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/add_to_cart"
+        android:layout_marginRight="@dimen/three_dp"
+        android:layout_alignBottom="@+id/product_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

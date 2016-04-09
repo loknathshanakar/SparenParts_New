@@ -9,6 +9,7 @@
     <color name="colorDarkGray">#545454</color>
     <color name="colorRed">#D90504</color>
     <color name="colorRed_light">#E74C3C</color>
+    <color name="colorRed_lighter">#FF8183</color>
     <color name="nav_drawer_color">#262F3E</color>
     <color name="nav_drawer_parent_text_color">#EBC45F</color>
     <color name="nav_drawer_indicator_color">#262F3E</color>

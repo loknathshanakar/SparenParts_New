@@ -58,6 +58,14 @@
             android:layout_below="@id/saperator_1"
             layout="@layout/reusable_retail_discount_taxes"/>
 
+        <include android:id="@+id/qty_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/qty_plus_minus"
+            android:layout_below="@+id/saperator_1"
+            android:layout_alignRight="@+id/add_to_quotation"
+            android:layout_alignEnd="@+id/add_to_quotation" />
+
         <include android:id="@+id/saperator_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

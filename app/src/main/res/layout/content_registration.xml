@@ -47,6 +47,7 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/registration_content"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -60,6 +61,7 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/company_name"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -73,6 +75,8 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
             android:layout_below="@+id/full_name"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -86,6 +90,8 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
+            android:inputType="number"
             android:layout_below="@+id/email"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -99,6 +105,8 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
+            android:inputType="textPassword"
             android:layout_below="@+id/phine_number"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -112,6 +120,8 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
+            android:inputType="textPassword"
             android:layout_below="@+id/password"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -171,6 +181,7 @@
             android:background="@color/colorBlack"/>
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/saperator_2"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -184,6 +195,7 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/address"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -197,6 +209,7 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/city"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -210,6 +223,7 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/district"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -223,6 +237,9 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="6"
             android:layout_below="@+id/state"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -292,6 +309,7 @@
             android:background="@color/colorBlack"/>
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/saperator_3"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -305,6 +323,7 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/vat_no"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -317,7 +336,9 @@
             android:id="@+id/modvat_no"
             android:layout_centerHorizontal="true" />
 
+
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/modvat_no"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -331,6 +352,7 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/address_s"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -344,6 +366,7 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
+            android:singleLine="true"
             android:layout_below="@+id/city_s"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
@@ -372,6 +395,9 @@
 
 
         <EditText
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="6"
             android:layout_below="@+id/district_s"
             android:layout_marginTop="@dimen/ten_dp"
             android:layout_marginLeft="@dimen/ten_dp"
